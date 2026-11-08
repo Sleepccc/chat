@@ -1,0 +1,38 @@
+# Python / local IDE
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.idea/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+secrets/
+.secrets/
+credentials/
+.codex/
+auth.json
+credentials.json
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Raw experiment output; commit only reviewed, sanitized evidence
+*.log
+experiments/adapter_probe/.local/
+experiments/adapter_probe/logs/
+experiments/adapter_probe/raw/
+experiments/adapter_probe/raw*.json*
+
+# Python packaging build output
+*.egg-info/
+build/
+dist/
+
+# Private learning history and original local experiment evidence
+/learning/
+/experiments/adapter_probe/evidence/
